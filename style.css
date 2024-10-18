@@ -166,42 +166,6 @@ iframe {
   border: none;
   margin-top: 20px;
 }
-/* a{
-  color:#888;
-  text-decoration:none;
-  
-}
-a:hover{
-  color: blue;
-}
-#java a{
-  max-height: 500px;
-  padding: 50px;
-  background-color: antiquewhite;
-  border-radius: 8px;
-  border-style:solid;
- 
-  margin-right: 100px
-  ;
-}
-#java h1{
-  margin-bottom: 80px;
-} */
-/* .container {
- 
-  margin: 0 auto;
-  background: #fff;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  text-align: center;
-} */
-
-/* h1 {
-  margin-bottom: 20px;
-  font-size: 24px;
-  color: #333;
-} */
 
 .materials-grid {
   display: grid;
@@ -231,9 +195,10 @@ a:hover{
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 30px;
   margin: 10px 0;
-  color: #555;
+  color: black;
+  text-align: center;
 }
 
 button {
