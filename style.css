@@ -98,14 +98,7 @@ body {
   background: rgb(94, 76, 76);
   color: white;
 }
-/* .container {
-  width: 80%;
-  margin: 50px auto;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-} */
+
 h1 {
   text-align: center;
   color: #333;
@@ -172,4 +165,88 @@ iframe {
   height: 500px;
   border: none;
   margin-top: 20px;
+}
+/* a{
+  color:#888;
+  text-decoration:none;
+  
+}
+a:hover{
+  color: blue;
+}
+#java a{
+  max-height: 500px;
+  padding: 50px;
+  background-color: antiquewhite;
+  border-radius: 8px;
+  border-style:solid;
+ 
+  margin-right: 100px
+  ;
+}
+#java h1{
+  margin-bottom: 80px;
+} */
+/* .container {
+ 
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+} */
+
+/* h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+} */
+
+.materials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.material-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.material-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  font-size: 48px;
+  color: #3a86ff;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #555;
+}
+
+button {
+  background-color: #3a86ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #295ebf;
 }
