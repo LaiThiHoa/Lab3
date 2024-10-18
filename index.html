@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="javascript.js" defer></script>
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <div class="left">
+          <h1>Tài liệu</h1>
+          <hr>
+          <div class="ulli">
+            <ul>
+              <li>
+                <a href="#" >Giới thiệu</a>
+                <ul class="menucon">
+                  <li>
+                    <a href="#"  onclick="showContent('javagioithieu')">Java </a>
+                  </li>
+                  <li>
+                    <a href="#" onclick="showContent('pythongioithieu')" >Python </a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" onclick="showContent('chia-se')">Chia sẻ tài liệu </a>
+              </li>
+              <li>
+                <a href="#" onclick="showContent('tai-lieu')">Tài liệu học tập </a>
+              </li>
+              <li>
+                <a href="#" onclick="showContent('java')">Lập trình Java</a>
+              </li>
+              <li>
+                <a href="#" onclick="showContent('python')">Lập trình Python</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right">
+          <h1>Nội dung</h1>
+          <hr>
+          <div class="scrollable-content">
+            <div id="javagioithieu" class="content" style="display: none;">
+              <h2>Giới thiệu về ngôn ngữ lập trình Java</h2>
+              <ol>
+                <li><b>Lịch sử phát triển:</b> </li>
+                <p>Java được phát triển bởi James Gosling và các đồng nghiệp tại Sun Microsystems vào đầu những năm 1990 và chính thức ra mắt vào năm 1995. Ban đầu, Java được tạo ra để phục vụ cho các thiết bị điện tử cầm tay nhưng sau đó phát triển mạnh mẽ và trở thành một trong những ngôn ngữ lập trình phổ biến nhất thế giới. Oracle hiện tại đang sở hữu Java sau khi mua lại Sun Microsystems vào năm 2010.</p>
+                <li><b>Đặc điểm nổi bật của Java:</b></li>
+                <ul>
+                  <li> <b>Đa nền tảng</b>(Platform Independent): Một trong những đặc điểm nổi bật nhất của Java là khả năng chạy trên nhiều hệ điều hành mà không cần thay đổi mã nguồn. Điều này có được nhờ cơ chế biên dịch mã Java thành bytecode và chạy trên Java Virtual Machine (JVM), cho phép ứng dụng Java có thể chạy trên bất kỳ nền tảng nào có cài JVM (Windows, macOS, Linux, v.v.).</li>
+                  <li><b>Bảo mật cao</b> : Java được thiết kế với nhiều cơ chế bảo mật mạnh mẽ, từ việc kiểm soát quyền truy cập hệ thống đến việc quản lý bộ nhớ chặt chẽ, giúp giảm thiểu các lỗi bảo mật, đặc biệt là các lỗi liên quan đến bộ nhớ.</li>
+                  <li><b>Quản lý bộ nhớ tự động</b>  (Garbage Collection): Java có tính năng tự động quản lý bộ nhớ nhờ cơ chế Garbage Collection, giúp lập trình viên không phải lo lắng về việc giải phóng bộ nhớ thủ công, tránh tình trạng tràn bộ nhớ hoặc rò rỉ bộ nhớ.</li>
+                  <li><b>Hướng đối tượng hoàn toàn</b> : Java là ngôn ngữ hướng đối tượng 100%, điều này có nghĩa là mọi thứ trong Java đều là đối tượng (object). Các nguyên tắc hướng đối tượng như tính đóng gói, tính kế thừa, tính đa hình và tính trừu tượng đều được thực thi một cách đầy đủ.</li>
+                  <li><b>Cộng đồng và thư viện phong phú</b> : Java có một cộng đồng phát triển mạnh mẽ với hàng nghìn thư viện và framework sẵn có như Spring, Hibernate, Struts, giúp lập trình viên dễ dàng phát triển các ứng dụng từ nhỏ đến lớn.</li>
+                </ul>
+                <li><b>Ứng dụng thực tiễn:</b></li>
+                <ul>
+                  <li> <b>Phát triển ứng dụng Android:</b> Java là ngôn ngữ chính trong phát triển ứng dụng Android, giúp các nhà phát triển xây dựng ứng dụng cho hàng triệu thiết bị di động</li>
+                  <li> <b>Ứng dụng doanh nghiệp:</b> Java được sử dụng rộng rãi trong phát triển các hệ thống ứng dụng doanh nghiệp nhờ khả năng mở rộng, bảo mật, và quản lý tốt.</li>
+                  <li> <b>Ứng dụng web: </b> Với sự hỗ trợ của các framework như Spring, Hibernate, Java đã được sử dụng phổ biến để xây dựng các hệ thống web lớn, phức tạp.
+
+                  </li>
+                </ul>
+              </ol>
+             
+            </div>
+            <div id="pythongioithieu" class="content" style="display: none;">
+              <h2>Giới thiệu về ngôn ngữ lập trình Python</h2>
+              <ol>
+                <li><b>Lịch sử và sự phát triển của Java:</b></li>
+                <ul>
+                  <li>Python được tạo ra bởi Guido van Rossum và ra mắt vào năm 1991. Tên Python được lấy cảm hứng từ nhóm hài kịch Monty Python, vì vậy Guido mong muốn ngôn ngữ của mình dễ tiếp cận và vui vẻ.</li>
+                  <li>Python trải qua nhiều phiên bản cải tiến, với bước ngoặt là Python 2.0 vào năm 2000 và Python 3.0 vào năm 2008, đánh dấu sự thay đổi lớn trong cú pháp và chức năng, nhằm loại bỏ những yếu tố lỗi thời và làm ngôn ngữ trở nên hiệu quả hơn.
+                  </li>
+                  <li>Python hiện nay vẫn đang được phát triển và cập nhật thường xuyên bởi cộng đồng lớn mạnh của nó.</li>
+                </ul>
+                <li><b>Đặc điểm nổi bật của Python:</b></li>
+                <ul>
+                  <li><b>Cú pháp rõ ràng và dễ học:</b> Python được thiết kế với cú pháp rất dễ đọc, đơn giản, gần gũi với ngôn ngữ tự nhiên. Điều này giúp lập trình viên, đặc biệt là những người mới học, dễ dàng hiểu và viết mã nhanh chóng.</li>
+                  <li><b>Đa nền tảng:</b>Python cũng là một ngôn ngữ đa nền tảng, có thể chạy trên nhiều hệ điều hành khác nhau như Windows, macOS, Linux mà không cần thay đổi mã nguồn.</li>
+                  <li><b>Đa mô hình lập trình: </b>Python hỗ trợ nhiều phong cách lập trình khác nhau như lập trình thủ tục, lập trình hướng đối tượng và lập trình hàm, giúp lập trình viên có thể linh hoạt trong cách tiếp cận và giải quyết vấn đề.</li>
+                  <li><b>Thư viện và framework phong phú:</b> Python có hàng ngàn thư viện và framework mạnh mẽ như NumPy, Pandas, TensorFlow, Flask, Django, v.v. Những thư viện này giúp Python trở nên cực kỳ mạnh mẽ trong các lĩnh vực từ khoa học dữ liệu, trí tuệ nhân tạo, phát triển web đến các hệ thống nhúng.</li>
+                  <li><b>Mã nguồn mở và cộng đồng mạnh mẽ:</b>Python là một ngôn ngữ mã nguồn mở, với một cộng đồng lập trình viên đông đảo luôn sẵn sàng hỗ trợ và phát triển thêm các công cụ, thư viện mới.</li>
+                </ul>
+                <li><b> Ứng dụng thực tiễn</b></li>
+                <ul>
+                  <li><b>Khoa học dữ liệu và học máy:</b>Python là ngôn ngữ ưa thích của các nhà khoa học dữ liệu và kỹ sư học máy. Các thư viện mạnh mẽ như NumPy, Pandas, Scikit-learn và TensorFlow giúp Python trở thành công cụ chính trong phân tích dữ liệu, mô hình hóa và phát triển các hệ thống học máy.</li>
+                  <li><b>Trí tuệ nhân tạo:</b>Python được sử dụng rộng rãi trong các dự án AI, từ xử lý ngôn ngữ tự nhiên, nhận diện hình ảnh cho đến xây dựng chatbot.</li>
+                  <li><b>Phát triển web: </b>Các framework như Django và Flask giúp Python trở thành lựa chọn phổ biến cho phát triển ứng dụng web, với khả năng phát triển nhanh và bảo trì dễ dàng.</li>
+                  <li><b>Tự động hóa: </b> Python rất hữu dụng trong việc tự động hóa các tác vụ hàng ngày như xử lý file, thao tác hệ thống, hoặc tương tác với API.</li>
+                </ul>
+              </ol>
+
+            </div>
+            <div id="chia-se" class="content" style="display: none;">
+                <h1>Chia sẻ Tài liệu</h1>
+              
+                <div class="upload-section">
+                  <input type="file" id="fileInput" multiple>
+                  <button onclick="uploadFiles()">Tải Tài liệu lên</button>
+                </div>
+              
+                <div class="documents" id="documentsContainer">
+                  <!-- Các tài liệu sẽ được thêm vào đây -->
+                </div>
+              
+                <iframe id="viewer" style="display: none;"></iframe>
+            </div>
+              
+            <div id="tai-lieu" class="content" style="display: none;">
+              <p>Đây là nội dung phần Tài liệu học tập.</p>
+            </div>
+            <div id="java" class="content" style="display: none;">
+              <p>Đây là nội dung phần Lập trình Java.</p>
+            </div>
+            <div id="python" class="content" style="display: none;">
+              <p>Đây là nội dung phần Lập trình Python.</p>
+          </div>
+        </div>
+      </header>
+      <div class="container"></div>
+      <footer class="footer"></footer>
+    </div>
+  </body>
+</html>
