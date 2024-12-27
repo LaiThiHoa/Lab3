@@ -1,0 +1,267 @@
+/* Cơ bản cho body */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-image: url('./img/pexels-dom-j-7304-45718.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Sidebar */
+.sidebar {
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidebar a {
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ddd;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar a.active {
+  background-color: #575757;
+  color: white;
+}
+
+/* Nội dung chính */
+#main {
+  margin-left: 250px;
+  padding: 20px;
+  flex: 1;
+}
+
+/* Nội dung ẩn/hiện */
+.content {
+  display: none;
+}
+
+.content.active {
+  display: block;
+}
+.upload-container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Phần tiêu đề và mô tả */
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #444;
+  margin-top: 30px;
+}
+
+p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Các trường nhập liệu */
+.upload-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.upload-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.upload-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Nút tải lên */
+.upload-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: #0056b3;
+}
+
+/* Danh sách tài liệu đã tải lên */
+.uploaded-files-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.uploaded-files-list li {
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 4px rgba(156, 155, 155, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.uploaded-files-list li:hover {
+  transform: translateX(10px);
+  box-shadow: 0 0 8px rgba(70, 69, 69, 0.2);
+}
+
+.uploaded-files-list li:before {
+  content: "📄";
+  margin-right: 10px;
+}
+/* Nút xóa trong danh sách */
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+/* Định dạng mục tệp đã tải lên */
+.uploaded-file-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.uploaded-file-item span {
+  font-size: 16px;
+  color: #333;
+}
+.materials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.material-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.material-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  font-size: 48px;
+  color: #3a86ff;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 30px;
+  margin: 10px 0;
+  color: black;
+  text-align: center;
+}
+
+button {
+  background-color: #3a86ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #295ebf;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .upload-container {
+      width: 90%;
+      margin-top: 15px;
+  }
+
+  h2 {
+      font-size: 22px;
+  }
+
+  h3 {
+      font-size: 18px;
+  }
+
+  p {
+      font-size: 14px;
+  }
+
+  .upload-input {
+      font-size: 14px;
+  }
+
+  .upload-button {
+      font-size: 14px;
+  }
+}

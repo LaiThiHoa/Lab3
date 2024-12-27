@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Nội Dung Khác</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <a href="#" data-target="home" class="active">Giới thiệu về Java </a>
+        <a href="#" data-target="services">Tải tài liệu lên </a>
+        <a href="#" data-target="clients">Tài liệu tham khảo </a>
+       
+    </div>
+
+    <!-- Nội dung chính -->
+    <div id="main">
+        <div id="home" class="content active">
+          <h2>Giới thiệu về ngôn ngữ lập trình Java</h2>
+          <ol>
+            <li><b>Lịch sử phát triển:</b> </li>
+            <p>Java được phát triển bởi James Gosling và các đồng nghiệp tại Sun Microsystems vào đầu những năm 1990 và chính thức ra mắt vào năm 1995. Ban đầu, Java được tạo ra để phục vụ cho các thiết bị điện tử cầm tay nhưng sau đó phát triển mạnh mẽ và trở thành một trong những ngôn ngữ lập trình phổ biến nhất thế giới. Oracle hiện tại đang sở hữu Java sau khi mua lại Sun Microsystems vào năm 2010.</p>
+            <li><b>Đặc điểm nổi bật của Java:</b></li>
+            <ul>
+              <li> <b>Đa nền tảng</b>(Platform Independent): Một trong những đặc điểm nổi bật nhất của Java là khả năng chạy trên nhiều hệ điều hành mà không cần thay đổi mã nguồn. Điều này có được nhờ cơ chế biên dịch mã Java thành bytecode và chạy trên Java Virtual Machine (JVM), cho phép ứng dụng Java có thể chạy trên bất kỳ nền tảng nào có cài JVM (Windows, macOS, Linux, v.v.).</li>
+              <li><b>Bảo mật cao</b> : Java được thiết kế với nhiều cơ chế bảo mật mạnh mẽ, từ việc kiểm soát quyền truy cập hệ thống đến việc quản lý bộ nhớ chặt chẽ, giúp giảm thiểu các lỗi bảo mật, đặc biệt là các lỗi liên quan đến bộ nhớ.</li>
+              <li><b>Quản lý bộ nhớ tự động</b>  (Garbage Collection): Java có tính năng tự động quản lý bộ nhớ nhờ cơ chế Garbage Collection, giúp lập trình viên không phải lo lắng về việc giải phóng bộ nhớ thủ công, tránh tình trạng tràn bộ nhớ hoặc rò rỉ bộ nhớ.</li>
+              <li><b>Hướng đối tượng hoàn toàn</b> : Java là ngôn ngữ hướng đối tượng 100%, điều này có nghĩa là mọi thứ trong Java đều là đối tượng (object). Các nguyên tắc hướng đối tượng như tính đóng gói, tính kế thừa, tính đa hình và tính trừu tượng đều được thực thi một cách đầy đủ.</li>
+              <li><b>Cộng đồng và thư viện phong phú</b> : Java có một cộng đồng phát triển mạnh mẽ với hàng nghìn thư viện và framework sẵn có như Spring, Hibernate, Struts, giúp lập trình viên dễ dàng phát triển các ứng dụng từ nhỏ đến lớn.</li>
+            </ul>
+            <li><b>Ứng dụng thực tiễn:</b></li>
+            <ul>
+              <li> <b>Phát triển ứng dụng Android:</b> Java là ngôn ngữ chính trong phát triển ứng dụng Android, giúp các nhà phát triển xây dựng ứng dụng cho hàng triệu thiết bị di động</li>
+              <li> <b>Ứng dụng doanh nghiệp:</b> Java được sử dụng rộng rãi trong phát triển các hệ thống ứng dụng doanh nghiệp nhờ khả năng mở rộng, bảo mật, và quản lý tốt.</li>
+              <li> <b>Ứng dụng web: </b> Với sự hỗ trợ của các framework như Spring, Hibernate, Java đã được sử dụng phổ biến để xây dựng các hệ thống web lớn, phức tạp.
+
+              </li>
+            </ul>
+          </ol>
+         
+        </div>
+        <div id="services" class="content">
+          <h2>Chia sẻ tài liệu</h2>
+          <!-- Form upload tài liệu -->
+          <div class="upload-container">
+              <form id="uploadForm" class="upload-form">
+                  <label for="fileInput" class="upload-label">Chọn tài liệu để tải lên:</label>
+                  <input type="file" id="fileInput" name="file" accept=".pdf,.doc,.docx,.txt" class="upload-input">
+                  <button type="button" id="uploadButton" class="upload-button">Tải lên</button>
+              </form>
+          </div>
+          
+          <!-- Danh sách tài liệu đã tải lên -->
+          <h3>Tài liệu đã tải lên:</h3>
+          <ul id="uploadedFilesList" class="uploaded-files-list"></ul>
+      </div>
+      
+       
+        <div id="clients" class="content">
+            <h2>Tài liệu tham khảo </h2>
+            <div class="materials-grid">
+              <div class="material-card">
+                  <div class="icon">📘</div>
+                  <h2>Java basics 1</h2>
+                  <a href="/document/Part 02 - Java Basics 2 - Operators_2024.pdf" target="_blank">
+                    <button>Xem tài liệu</button>
+                  </a>
+              </div>
+              <div class="material-card">
+                  <div class="icon">📘</div>
+                  <h2>Java basics 2</h2>
+                  <a href="/document/Part 03 - Java Basics 3 - Flow Control_BT (1).pdf" target="_blank">
+                    <button>Xem tài liệu</button>
+                  </a>
+              </div>
+              <div class="material-card">
+                  <div class="icon">📘</div>
+                  <h2>Java basics 3</h2>
+                  <a href="/document/Part 04 - Java Basics 4 - Built in Objects.pdf" target="_blank">
+                    <button>Xem tài liệu</button>
+                  </a>
+              </div>
+              <div class="material-card">
+                  <div class="icon">📘</div>
+                  <h2>Object</h2>
+                  <a href="/document/Part 05 - Object Oriented Programming_BaiTap.pdf" target="_blank">
+                    <button>Xem tài liệu</button>
+                  </a>
+              </div>
+              <div class="material-card">
+                  <div class="icon">📘</div>
+                  <h2>Swing</h2>
+                  <a href="/document/Part 07 - SWING  - First Program.pdf" target="_blank">
+                    <button>Xem tài liệu</button>
+                  </a>
+              </div>
+              <div class="material-card">
+                  <div class="icon">📘</div>
+                  <h2>Swing 2</h2>
+                  <a href="/document/Part 07a - SWING 1 - Intro.pdf" target="_blank">
+                    <button>Xem tài liệu</button>
+                  </a>
+              </div>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
